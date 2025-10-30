@@ -4,7 +4,7 @@ pacman -S niri xdg-desktop-portal-gnome gnome-keyring xwayland-satellite
 pacman -S hypridle xdg-desktop-portal-gtk xdg-user-dirs pipewire wireplumber polkit-kde-agent
 pacman -S libnotify ghostty network-manager-applet wl-clipboard
 pacman -S brightnessctl udiskie playerctl helvum pipewire-audio pipewire-alsa pipewire-pulse
-pacman -S nwg-look qt5ct qt6ct breeze breeze5 breeze-gtk xcursor-comix
+pacman -S nwg-look orchis-theme xcursor-comix
 pacman -S qt5-wayland qt6-wayland
 # Fonts
 pacman -S ttf-cascadia-code-nerd otf-font-awesome ttf-sarasa-gothic noto-fonts-emoji tela-circle-icon-theme-standard
