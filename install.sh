@@ -7,6 +7,6 @@ pacman -S brightnessctl udiskie playerctl helvum pipewire-audio pipewire-alsa pi
 pacman -S nwg-look orchis-theme xcursor-comix
 pacman -S qt5-wayland qt6-wayland
 # Fonts
-pacman -S ttf-cascadia-code-nerd otf-font-awesome ttf-sarasa-gothic noto-fonts-emoji tela-circle-icon-theme-standard
+pacman -S ttf-cascadia-code-nerd ttf-sarasa-gothic noto-fonts-emoji tela-circle-icon-theme-standard
 # Noctalia-shell opt dep
 pacman -S cava wlsunset
