@@ -245,7 +245,7 @@ window-rule {
 // Layer rules
 // Put swaybg inside the overview backdrop.
 layer-rule {
-    match namespace="^quickshell-overview$"
+    match namespace="^noctalia-overview.*$"
     place-within-backdrop true
 }
 
