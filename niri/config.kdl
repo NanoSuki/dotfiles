@@ -53,14 +53,14 @@ layout {
     gaps 8
     center-focused-column "never"
     preset-column-widths {
-        proportion 0.33333
         proportion 0.5
         proportion 0.66667
+        proportion 0.33333
     }
     preset-window-heights {
-        proportion 0.33333
         proportion 0.5
         proportion 0.66667
+        proportion 0.33333
     }
     default-column-width {}
     focus-ring {
@@ -358,7 +358,6 @@ binds {
 
     Mod+Minus        { set-column-width "-10%"; }
     Mod+Equal        { set-column-width "+10%"; }
-    Mod+Ctrl+H       { set-column-width "50%"; }
     Mod+Shift+Minus  { set-window-height "-10%"; }
     Mod+Shift+Equal  { set-window-height "+10%"; }
 
