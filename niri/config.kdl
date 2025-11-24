@@ -118,6 +118,7 @@ layout {
 spawn-at-startup "qs" "-c" "noctalia-shell"
 spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
 spawn-at-startup "hypridle"
+spawn-at-startup "gammastep"
 spawn-at-startup "clipse" "-listen"
 spawn-at-startup "udiskie"
 spawn-at-startup "brightnessctl" "set" "1"
