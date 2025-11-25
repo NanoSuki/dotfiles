@@ -9,4 +9,4 @@ pacman -S --asexplicit qt5-wayland qt6-wayland
 # Fonts
 pacman -S --asexplicit ttf-cascadia-code-nerd ttf-sarasa-gothic noto-fonts-emoji tela-circle-icon-theme-standard
 # Noctalia-shell opt dep
-pacman -S --asexplicit cava
+pacman -S --asexplicit cava power-profiles-daemon
