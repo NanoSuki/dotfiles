@@ -66,7 +66,7 @@ recent-windows {
 
     previews {
         max-height 1080
-        max-scale 0.65
+        max-scale 0.75
     }
 
     binds {
