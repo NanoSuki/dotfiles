@@ -1,0 +1,69 @@
+// Settings that influence how windows are positioned and sized.
+// Find more information on the wiki:
+// https://yalter.github.io/niri/Configuration:-Layout
+layout {
+    gaps 8
+    center-focused-column "never"
+    preset-column-widths {
+        proportion 0.5
+        proportion 0.66667
+        proportion 0.33333
+    }
+    preset-window-heights {
+        proportion 0.5
+        proportion 0.66667
+        proportion 0.33333
+    }
+    default-column-width {}
+    focus-ring {
+        off
+    }
+    border {
+        // The settings are the same as for the focus ring.
+        // If you enable the border, you probably want to disable the focus ring.
+        on
+        
+        width 2
+        active-gradient from="rgb(96, 150, 180)" to="rgb(238, 233, 218)" angle=180 relative-to="workspace-view"
+        inactive-color "rgb(76, 88, 91)"
+        urgent-color "rgb(241, 103, 103)"
+    }
+
+    // You can enable drop shadows for windows.
+    shadow {
+        // Uncomment the next line to enable shadows.
+        on
+        softness 30
+        spread 5
+        offset x=0 y=5
+        draw-behind-window false
+        color "#00000070"
+    }
+
+    struts {
+        left 0
+        right 0
+        top 2
+        bottom 2
+    }
+
+    tab-indicator {
+        // off
+        // hide-when-single-tab
+        place-within-column
+        gap 0
+        width 6
+        length total-proportion=0.5
+        position "left"
+        gaps-between-tabs 2
+        corner-radius 5
+        active-color "rgb(254, 93, 38)"
+        inactive-color "rgb(193, 219, 179)"
+        urgent-color "rgb(242, 192, 120)"
+    }
+
+    insert-hint {
+        // off
+        color "rgba(139, 161, 175, 0.8)"
+    }
+}

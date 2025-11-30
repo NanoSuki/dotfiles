@@ -1,0 +1,6 @@
+// Layer rules
+// Put swaybg inside the overview backdrop.
+layer-rule {
+    match namespace="^noctalia-overview.*$"
+    place-within-backdrop true
+}

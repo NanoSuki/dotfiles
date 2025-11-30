@@ -1,0 +1,88 @@
+// Miscellaneous
+spawn-at-startup "qs" "-c" "noctalia-shell"
+spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
+spawn-at-startup "hypridle"
+spawn-at-startup "gammastep"
+spawn-at-startup "clipse" "-listen"
+spawn-at-startup "udiskie"
+spawn-at-startup "brightnessctl" "set" "1"
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+prefer-no-csd
+
+// You can change the path where screenshots are saved.
+// A ~ at the front will be expanded to the home directory.
+// The path is formatted with strftime(3) to give you the screenshot date and time.
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+environment {
+    // Set a variable like this:
+    // QT_QPA_PLATFORM "wayland"
+
+    // Remove a variable by using null as the value:
+    // DISPLAY null
+    GDK_BACKEND "wayland,x11,*"
+    QT_QPA_PLATFORM "wayland;xcb"
+    SDL_VIDEODRIVER "wayland"
+    CLUTTER_BACKEND "wayland"
+    QT_IM_MODULE "fcitx"
+    QT_IM_MODULES "wayland;fcitx;ibus"
+    XMODIFIERS "@im=fcitx"
+    QT_QPA_PLATFORMTHEME "gtk3"
+}
+
+cursor {
+    xcursor-theme "ComixCursors-White"
+    xcursor-size 48
+}
+
+clipboard {
+    // disable-primary
+}
+
+overview {
+    zoom 0.5
+    workspace-shadow {
+        // off
+        softness 40
+        spread 10
+        offset x=0 y=10
+        color "#00000050"
+    }
+}
+
+recent-windows {
+    // off
+
+    highlight {
+        active-color "rgba(139, 161, 175, 0.8)"
+        urgent-color "rgba(241, 103, 103, 0.8)"
+        padding 30
+        corner-radius 20
+    }
+
+    previews {
+        max-height 1080
+        max-scale 0.65
+    }
+
+    binds {
+        Alt+Tab         { next-window; }
+        Alt+Shift+Tab   { previous-window; }
+        Alt+grave       { next-window     filter="app-id"; }
+        Alt+Shift+grave { previous-window filter="app-id"; }
+
+        Mod+Tab         { next-window; }
+        Mod+Shift+Tab   { previous-window; }
+        Mod+grave       { next-window     filter="app-id"; }
+        Mod+Shift+grave { previous-window filter="app-id"; }
+    }
+}
+
+xwayland-satellite {
+    // off
+    // path "xwayland-satellite"
+}

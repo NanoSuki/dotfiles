@@ -1,0 +1,128 @@
+binds {
+    // Keys consist of modifiers separated by + signs, followed by an XKB key name
+    // in the end. To find an XKB name for a particular key, you may use a program
+    // like wev.
+    //
+    // "Mod" is a special modifier equal to Super when running on a TTY, and to Alt
+    // when running as a winit window.
+    //
+    // Most actions that you can bind here can also be invoked programmatically with
+    // `niri msg action do-something`.
+
+    Mod+Q                                          { spawn "ghostty"; }
+    Mod+D      repeat=false                        { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
+    Mod+Ctrl+L repeat=false allow-inhibiting=false { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
+    Mod+Ctrl+D repeat=false                        { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "idleInhibitor" "toggle"; }
+    Mod+Ctrl+B repeat=false                        { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "bar" "toggle"; }
+    Mod+V      repeat=false                        { spawn "ghostty" "--class=wl.clipse" "--background-opacity=1" "-e" "clipse"; }
+    Mod+B                                          { spawn "firefox"; }
+
+    // Clipse kill and rerun
+    Mod+Shift+V { spawn-sh "~/.config/hypr/scripts/clipse.sh kill"; }
+    Mod+Ctrl+V  { spawn-sh "~/.config/hypr/scripts/clipse.sh listen"; }
+
+    XF86AudioMute         allow-when-locked=true { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "volume" "muteOutput"; }
+    XF86AudioLowerVolume  allow-when-locked=true { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "volume" "decrease"; }
+    XF86AudioRaiseVolume  allow-when-locked=true { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "volume" "increase"; }
+    XF86AudioPlay         allow-when-locked=true { spawn-sh "playerctl play-pause"; }
+    XF86MonBrightnessUp   allow-when-locked=true { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "brightness" "increase"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "brightness" "decrease"; }
+
+    // Scroll Bindings
+    Mod+WheelScrollDown      cooldown-ms=150 allow-inhibiting=false { focus-workspace-down; }
+    Mod+WheelScrollUp        cooldown-ms=150 allow-inhibiting=false { focus-workspace-up; }
+    Mod+Ctrl+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
+    Mod+Ctrl+WheelScrollUp   cooldown-ms=150 { move-column-to-workspace-up; }
+    Mod+Shift+WheelScrollDown                { focus-column-right-or-first; }
+    Mod+Shift+WheelScrollUp                  { focus-column-left-or-last; }
+    Mod+Ctrl+Shift+WheelScrollDown           { move-column-right; }
+    Mod+Ctrl+Shift+WheelScrollUp             { move-column-left; }
+
+    Mod+Shift+E { quit skip-confirmation=true; }
+
+    Mod+1 { focus-workspace 1; }
+    Mod+2 { focus-workspace 2; }
+    Mod+3 { focus-workspace 3; }
+    Mod+Ctrl+1  { move-workspace-to-index 1; }
+    Mod+Ctrl+2  { move-workspace-to-index 2; }
+    Mod+Ctrl+3  { move-workspace-to-index 3; }
+    Mod+Shift+1 { move-column-to-workspace 1; }
+    Mod+Shift+2 { move-column-to-workspace 2; }
+    Mod+Shift+3 { move-column-to-workspace 3; }
+    
+    // Screen Shot
+    Print      { screenshot; }
+    Ctrl+Print { screenshot-screen show-pointer=false; }
+    Alt+Print  { screenshot-window; }
+
+    Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+
+    Mod+C repeat=false           { close-window; }
+    Mod+BackSpace repeat=false   { close-window; }
+
+    Mod+Left         { focus-column-left-or-last; }
+    Mod+Down         { focus-window-down-or-top; }
+    Mod+Up           { focus-window-up-or-bottom; }
+    Mod+Right        { focus-column-right-or-first; }
+    Mod+H            { focus-column-left-or-last; }
+    Mod+J            { focus-window-down-or-top; }
+    Mod+K            { focus-window-up-or-bottom; }
+    Mod+L            { focus-column-right-or-first; }
+
+    Mod+Shift+Left   { move-column-left; }
+    Mod+Shift+Down   { move-window-down; }
+    Mod+Shift+Up     { move-window-up; }
+    Mod+Shift+Right  { move-column-right; }
+    Mod+Shift+H      { move-column-left; }
+    Mod+Shift+J      { move-window-down; }
+    Mod+Shift+K      { move-window-up; }
+    Mod+Shift+L      { move-column-right; }
+
+    Mod+Home         { focus-column-first; }
+    Mod+End          { focus-column-last; }
+    Mod+Ctrl+Home    { move-column-to-first; }
+    Mod+Ctrl+End     { move-column-to-last; }
+
+    Mod+U            { focus-workspace-up; }
+    Mod+I            { focus-workspace-down; }
+    Mod+Shift+U      { move-column-to-workspace-up; }
+    Mod+Shift+I      { move-column-to-workspace-down; }
+    Mod+Ctrl+U       { move-workspace-up; }
+    Mod+Ctrl+I       { move-workspace-down; }
+
+    Mod+BracketLeft  { consume-or-expel-window-left; }
+    Mod+BracketRight { consume-or-expel-window-right; }
+
+    Mod+R            { switch-preset-column-width; }
+    Mod+Shift+R      { switch-preset-window-height; }
+    Mod+Ctrl+R       { reset-window-height; }
+    Mod+F            { maximize-column; }
+    Mod+Shift+F      { fullscreen-window; }
+    Mod+Ctrl+Shift+F { toggle-windowed-fullscreen; }
+    // Expand the focused column to space not taken up by other fully visible columns.
+    // Makes the column "fill the rest of the space".
+    Mod+Ctrl+F       { expand-column-to-available-width; }
+
+    Mod+Ctrl+C       { center-column; }
+
+    Mod+Minus        { set-column-width "-10%"; }
+    Mod+Equal        { set-column-width "+10%"; }
+    Mod+Shift+Minus  { set-window-height "-10%"; }
+    Mod+Shift+Equal  { set-window-height "+10%"; }
+
+    // Move the focused window between the floating and the tiling layout.
+    Mod+T            { toggle-window-floating; }
+    Mod+Shift+T      { switch-focus-between-floating-and-tiling; }
+
+    Mod+G            { toggle-column-tabbed-display; }
+
+    // Open/close the Overview: a zoomed-out view of workspaces and windows.
+    // You can also move the mouse into the top-left hot corner,
+    // or do a four-finger swipe up on a touchpad.
+    Mod+O     repeat=false allow-inhibiting=false { toggle-overview; }
+
+    // Dynamic screencast target
+    Mod+S       repeat=false { set-dynamic-cast-monitor; }
+    Mod+Shift+S repeat=false { set-dynamic-cast-window; }
+    Mod+Ctrl+S  repeat=false { clear-dynamic-cast-target; }
+}
