@@ -1,5 +1,5 @@
 {
-    "useCustomTheme": true,
+    "useCustom": true,
     "TitleFore": "#E5E9F0",
     "TitleBack": "#2E3440",
     "TitleInfo": "#E5E9F0",
@@ -12,7 +12,7 @@
     "StatusMsg": "#8FBCBB",
     "PinIndicatorColor": "#EBCB8B",
     "SelectedBorder": "#88C0D0",
-    "SelectedDescBorder": "#81A1C1",
+    "SelectedDescBorder": "#81A1C1",  
     "FilteredMatch": "#A3BE8C",
     "FilterPrompt": "#D08770",
     "FilterInfo": "#E5E9F0",
@@ -24,5 +24,5 @@
     "PageInactiveDot": "#4C566A",
     "DividerDot": "#BF616A",
     "PreviewedText": "#ffffff",
-    "PreviewBorder": "#3498db"
+	"PreviewBorder": "#3498db"
 }
