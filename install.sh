@@ -1,12 +1,16 @@
 #!/bin/sh
-# You need to install clipse, noctalia-shell and maple font by yourself
 pacman -S --asexplicit niri xdg-desktop-portal-gnome gnome-keyring xwayland-satellite
 pacman -S --asexplicit hypridle xdg-desktop-portal-gtk xdg-user-dirs pipewire wireplumber polkit-kde-agent
 pacman -S --asexplicit libnotify ghostty network-manager-applet wl-clipboard
 pacman -S --asexplicit brightnessctl udiskie gammastep helvum pipewire-audio pipewire-alsa pipewire-pulse
-pacman -S --asexplicit nwg-look xcursor-comix
+pacman -S --asexplicit nwg-look
 pacman -S --asexplicit qt5-wayland qt6-wayland
+
 # Fonts
 pacman -S --asexplicit ttf-cascadia-code-nerd ttf-sarasa-gothic noto-fonts-emoji tela-circle-icon-theme-standard
+
+# AUR deps:
+# clipse noctalia-shell ttf-maplemono-nf-cn catppuccin-cursors-latte
+
 # Noctalia-shell opt dep
 pacman -S --asexplicit cava power-profiles-daemon matugen adw-gtk-theme

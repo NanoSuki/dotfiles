@@ -35,8 +35,8 @@ environment {
 }
 
 cursor {
-    xcursor-theme "ComixCursors-White"
-    xcursor-size 48
+    xcursor-theme "catppuccin-latte-light-cursors"
+    xcursor-size 24
 }
 
 clipboard {
