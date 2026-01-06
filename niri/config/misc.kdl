@@ -32,6 +32,7 @@ environment {
     QT_IM_MODULES "wayland;fcitx;ibus"
     XMODIFIERS "@im=fcitx"
     QT_QPA_PLATFORMTHEME "gtk3"
+    QT_QPA_PLATFORMTHEME_QT6 "gtk3"
 }
 
 cursor {
