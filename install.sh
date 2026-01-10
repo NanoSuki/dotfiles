@@ -1,6 +1,6 @@
 #!/bin/sh
 pacman -S --asexplicit niri xdg-desktop-portal-gnome gnome-keyring xwayland-satellite
-pacman -S --asexplicit hypridle xdg-desktop-portal-gtk xdg-user-dirs pipewire wireplumber polkit-kde-agent
+pacman -S --asexplicit hypridle xdg-desktop-portal-gtk pipewire wireplumber polkit-kde-agent
 pacman -S --asexplicit libnotify ghostty network-manager-applet wl-clipboard
 pacman -S --asexplicit brightnessctl udiskie gammastep helvum pipewire-audio pipewire-alsa pipewire-pulse
 pacman -S --asexplicit nwg-look
