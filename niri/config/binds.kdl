@@ -18,8 +18,8 @@ binds {
     Mod+B                                          { spawn "firefox"; }
 
     // Clipse kill and rerun
-    Mod+Shift+V { spawn-sh "~/.config/hypr/scripts/clipse.sh kill"; }
-    Mod+Ctrl+V  { spawn-sh "~/.config/hypr/scripts/clipse.sh listen"; }
+    Mod+Shift+V { spawn-sh "~/.config/niri/scripts/clipse.sh kill"; }
+    Mod+Ctrl+V  { spawn-sh "~/.config/niri/scripts/clipse.sh listen"; }
 
     XF86AudioMute         allow-when-locked=true { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "volume" "muteOutput"; }
     XF86AudioLowerVolume  allow-when-locked=true { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "volume" "decrease"; }
