@@ -15,12 +15,8 @@ binds {
     Mod+Ctrl+D repeat=false                        { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "idleInhibitor" "toggle"; }
     Mod+Ctrl+B repeat=false                        { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "bar" "toggle"; }
     Mod+P                                          { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "sessionMenu" "toggle"; }
-    Mod+V      repeat=false                        { spawn "ghostty" "--class=wl.clipse" "--background-opacity=1" "-e" "clipse"; }
+    Mod+V      repeat=false                        { spawn "copyq" "toggle"; }
     Mod+B                                          { spawn "firefox"; }
-
-    // Clipse kill and rerun
-    Mod+Shift+V { spawn-sh "~/.config/niri/scripts/clipse.sh kill"; }
-    Mod+Ctrl+V  { spawn-sh "~/.config/niri/scripts/clipse.sh listen"; }
 
     XF86AudioMute         allow-when-locked=true { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "volume" "muteOutput"; }
     XF86AudioLowerVolume  allow-when-locked=true { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "volume" "decrease"; }
