@@ -13,4 +13,4 @@ pacman -S ttf-cascadia-code-nerd ttf-sarasa-gothic noto-fonts-emoji tela-circle-
 # clipse noctalia-shell ttf-maplemono-nf-cn catppuccin-cursors-latte
 
 # Noctalia-shell opt dep
-pacman -S cava power-profiles-daemon adw-gtk-theme
+pacman -S power-profiles-daemon adw-gtk-theme
