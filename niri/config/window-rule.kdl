@@ -15,6 +15,27 @@ window-rule {
     }
 }
 window-rule {
+    match app-id=r#"^org\.telegram\.desktop$"#
+    match app-id=r#"^Telegram$"#
+
+    match app-id=r#"^fluffychat$"#
+    match app-id=r#"^xdg-desktop-portal-gtk$"#
+
+    match app-id=r#"^org\.gnome\.Nautilus$"#
+    match app-id=r#"^thunar$"#
+
+    match app-id=r#"^com\.mitchellh\.ghostty$"#
+
+    match app-id=r#"^org\.mozilla\.Thunderbird$"#
+
+    match app-id=r#"^chromium$"# title=r#"^新标签页 - Chromium$"#
+    match app-id=r#"^firefox$"#  title=r#"^Mozilla Firefox$"#
+
+    match app-id=r#"^code-oss$"#
+
+    opacity 0.90
+}
+window-rule {
     match app-id=r#"^com\.github\.hluk\.copyq$"#
 
     open-floating true
