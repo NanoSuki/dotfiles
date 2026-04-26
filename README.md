@@ -10,5 +10,5 @@ See `apply.sh`.
 ## Credits
 Thanks to:
 - [hyprland wiki](https://wiki.hypr.land/)
-- [niri wiki](https://yalter.github.io/niri/)
+- [niri wiki](https://niri-wm.github.io/niri/)
 - [noctalia-dev/noctalia-shell](https://github.com/noctalia-dev/noctalia-shell)

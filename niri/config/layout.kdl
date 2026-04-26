@@ -1,6 +1,6 @@
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
-// https://yalter.github.io/niri/Configuration:-Layout
+// https://niri-wm.github.io/niri/Configuration:-Layout
 layout {
     gaps 4
     center-focused-column "never"

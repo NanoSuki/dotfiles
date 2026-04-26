@@ -50,7 +50,7 @@ binds {
     // Screen Shot
     Print      { screenshot; }
     Ctrl+Print { screenshot-screen show-pointer=false; }
-    Alt+Print  { screenshot-window; }
+    Alt+Print  { screenshot-window show-pointer=true; }
 
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 

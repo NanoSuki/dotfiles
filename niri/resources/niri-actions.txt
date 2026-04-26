@@ -110,7 +110,7 @@ Actions:
   consume-window-into-column
           Consume the window to the right into the focused column
   expel-window-from-column
-          Expel the focused window from the column
+          Expel the bottom window from the focused column
   swap-window-right
           Swap focused window with one to the right
   swap-window-left
@@ -269,6 +269,8 @@ Actions:
           Set the dynamic cast target to the focused monitor
   clear-dynamic-cast-target
           Clear the dynamic cast target, making it show nothing
+  stop-cast
+          Stop a PipeWire screencast
   toggle-overview
           Toggle (open/close) the Overview
   open-overview
