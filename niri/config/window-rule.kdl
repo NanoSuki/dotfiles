@@ -31,6 +31,8 @@ window-rule {
     match app-id=r#"^chromium$"# title=r#"^新标签页 - Chromium$"#
     match app-id=r#"^firefox$"#  title=r#"^Mozilla Firefox$"#
 
+    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
+    match app-id=r#"^com\.github\.hluk\.copyq$"#
     match app-id=r#"^code-oss$"#
 
     opacity 0.90
