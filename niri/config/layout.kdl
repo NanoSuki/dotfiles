@@ -4,6 +4,7 @@
 layout {
     gaps 4
     center-focused-column "never"
+    background-color "transparent"
     preset-column-widths {
         proportion 0.5
         proportion 0.66667
