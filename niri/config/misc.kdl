@@ -59,7 +59,7 @@ recent-windows {
         active-color "rgba(139, 161, 175, 0.8)"
         urgent-color "rgba(241, 103, 103, 0.8)"
         padding 30
-        corner-radius 20
+        corner-radius 8
     }
 
     previews {

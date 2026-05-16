@@ -57,7 +57,7 @@ layout {
         length total-proportion=0.5
         position "left"
         gaps-between-tabs 2
-        corner-radius 5
+        corner-radius 8
         active-color "rgb(254, 93, 38)"
         inactive-color "rgb(193, 219, 179)"
         urgent-color "rgb(242, 192, 120)"
