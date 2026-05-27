@@ -2,7 +2,7 @@
 pacman -S niri xdg-desktop-portal-gnome gnome-keyring xwayland-satellite
 pacman -S xdg-desktop-portal-gtk pipewire wireplumber polkit-kde-agent
 pacman -S ghostty network-manager-applet copyq
-pacman -S brightnessctl udiskie gammastep helvum pipewire-audio pipewire-alsa pipewire-pulse
+pacman -S brightnessctl udiskie gammastep pipewire-audio pipewire-alsa pipewire-pulse
 pacman -S nwg-look
 pacman -S qt5-wayland qt6-wayland
 
