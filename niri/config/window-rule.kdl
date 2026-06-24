@@ -29,22 +29,23 @@ window-rule {
     match app-id=r#"^org\.mozilla\.Thunderbird$"#
 
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
-    match app-id=r#"^com\.github\.hluk\.copyq$"#
     match app-id=r#"^code-oss$"#
+
+    match app-id=r#"dev\.noctalia\.Noctalia\.Settings"#
 
     opacity 0.90
 }
+// Floating Noctalia settings window.
 window-rule {
-    match app-id=r#"^com\.github\.hluk\.copyq$"#
+    match app-id=r#"dev\.noctalia\.Noctalia\.Settings"#
 
     open-floating true
-    default-column-width  { proportion 0.4; }
-    default-window-height { proportion 0.7; }
+    default-column-width  { fixed 1080; }
+    default-window-height { fixed 920; }
 }
 window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
     match app-id=r#"^org\.gnome\.World\.Secrets$"#
-    match app-id=r#"^com\.github\.hluk\.copyq$"#
     match app-id=r#"^org\.mozilla\.Thunderbird$"#
     match app-id=r#"^com\.obsproject\.Studio$"#
 
