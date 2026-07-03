@@ -10,7 +10,7 @@ pacman -S qt5-wayland qt6-wayland
 pacman -S ttf-cascadia-code-nerd ttf-sarasa-gothic noto-fonts-emoji tela-circle-icon-theme-standard
 
 # AUR deps:
-# noctalia-git ttf-maplemono-nf-cn catppuccin-cursors-latte
+# noctalia ttf-maplemono-nf-cn catppuccin-cursors-latte
 
 # Noctalia-shell opt dep
 pacman -S power-profiles-daemon adw-gtk-theme
