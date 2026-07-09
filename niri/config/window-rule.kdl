@@ -31,13 +31,13 @@ window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
     match app-id=r#"^code-oss$"#
 
-    match app-id=r#"dev\.noctalia\.Noctalia\.Settings"#
+    match app-id=r#"dev\.noctalia\.Noctalia"#
 
     opacity 0.90
 }
 // Floating Noctalia settings window.
 window-rule {
-    match app-id=r#"dev\.noctalia\.Noctalia\.Settings"#
+    match app-id=r#"dev\.noctalia\.Noctalia"#
 
     open-floating true
     default-column-width  { fixed 1080; }
